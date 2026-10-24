@@ -1,16 +1,10 @@
 package com.example.authapp;
 
-
-
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-/**
- * Écran principal : accès à la connexion ou à l'inscription.
- * Layout associé : activity_main.xml
- */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btnLogin).setOnClickListener(v ->
                 startActivity(new Intent(this, LoginActivity.class)));
-
         findViewById(R.id.btnRegister).setOnClickListener(v ->
                 startActivity(new Intent(this, RegisterActivity.class)));
     }
