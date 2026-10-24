@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Écran 2 — Création de compte (mise en page de la maquette "Create Account") -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        android:layout_gravity="top|end"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bg_decor_circle"
+        android:translationX="170dp"
+        android:translationY="-210dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingTop="64dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="32dp">
+
+            <TextView
+                style="@style/Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityHeading="true"
+                android:text="@string/register_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:text="@string/register_subtitle"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp" />
+
+            <!-- Nom + Prénom sur une même ligne -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etNom"
+                        style="@style/Field"
+                        android:autofillHints="familyName"
+                        android:hint="@string/hint_nom"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName|textCapWords" />
+
+                    <TextView
+                        android:id="@+id/tvNomError"
+                        style="@style/Field.Error" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etPrenom"
+                        style="@style/Field"
+                        android:autofillHints="givenName"
+                        android:hint="@string/hint_prenom"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName|textCapWords" />
+
+                    <TextView
+                        android:id="@+id/tvPrenomError"
+                        style="@style/Field.Error" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- E-mail -->
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/Field"
+                android:layout_marginTop="16dp"
+                android:autofillHints="emailAddress"
+                android:hint="@string/hint_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/tvEmailError"
+                style="@style/Field.Error" />
+
+            <!-- Mot de passe + bouton œil -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/Field"
+                    android:autofillHints="newPassword"
+                    android:hint="@string/hint_password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingEnd="56dp" />
+
+                <ImageButton
+                    android:id="@+id/btnTogglePassword"
+                    style="@style/Button.Eye" />
+            </FrameLayout>
+
+            <!-- Aide (remplacée par l'erreur quand il y en a une) -->
+            <TextView
+                android:id="@+id/tvPasswordHelper"
+                style="@style/Field.Helper"
+                android:text="@string/helper_password" />
+
+            <TextView
+                android:id="@+id/tvPasswordError"
+                style="@style/Field.Error" />
+
+            <!-- Confirmation + bouton œil -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    style="@style/Field"
+                    android:autofillHints="newPassword"
+                    android:hint="@string/hint_confirm_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingEnd="56dp" />
+
+                <ImageButton
+                    android:id="@+id/btnToggleConfirm"
+                    style="@style/Button.Eye" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvConfirmError"
+                style="@style/Field.Error" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/Button.Primary"
+                android:layout_marginTop="32dp"
+                android:text="@string/btn_register" />
+
+            <TextView
+                android:id="@+id/tvHaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/link_have_account"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                layout="@layout/include_social_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        style="@style/Button.Back" />
+</FrameLayout>

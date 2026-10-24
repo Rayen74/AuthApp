@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.GestionComptes" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_pressed</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="android:statusBarColor">@color/screen_bg</item>
+        <item name="android:navigationBarColor">@color/screen_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Titre orange en gras (Connexion / Créer un compte) -->
+    <style name="Text.Title" parent="">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Champ de saisie : fond rosé arrondi, contour orange au focus, rouge en erreur -->
+    <style name="Field">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:importantForAutofill">yes</item>
+    </style>
+
+    <!-- Message d'erreur affiché sous un champ -->
+    <style name="Field.Error" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">@color/error</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:accessibilityLiveRegion" tools:targetApi="kitkat">polite</item>
+    </style>
+
+    <!-- Texte d'aide permanent sous un champ -->
+    <style name="Field.Helper" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Bouton œil (afficher / masquer le mot de passe) -->
+    <style name="Button.Eye" parent="">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_visibility</item>
+        <item name="android:contentDescription">@string/cd_show_password</item>
+    </style>
+
+    <!-- Flèche de retour -->
+    <style name="Button.Back" parent="">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">top|start</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_arrow_back</item>
+        <item name="android:contentDescription">@string/cd_back</item>
+    </style>
+
+    <!-- Bandeau de message (erreur / succès) -->
+    <style name="Banner" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:accessibilityLiveRegion" tools:targetApi="kitkat">polite</item>
+    </style>
+
+    <!-- Bouton principal orange -->
+    <style name="Button.Primary" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:elevation">6dp</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/primary</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/primary</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Bouton carré gris des connexions sociales -->
+    <style name="Button.Social" parent="">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:background">@drawable/bg_social</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+</resources>

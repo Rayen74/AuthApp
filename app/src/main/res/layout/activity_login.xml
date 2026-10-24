@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Écran 1 — Connexion (mise en page de la maquette "Login here") -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        android:layout_gravity="top|end"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bg_decor_circle"
+        android:translationX="170dp"
+        android:translationY="-200dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingTop="64dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="32dp">
+
+            <TextView
+                style="@style/Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityHeading="true"
+                android:text="@string/login_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.1"
+                android:text="@string/login_subtitle"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- E-mail -->
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/Field"
+                android:layout_marginTop="56dp"
+                android:autofillHints="emailAddress"
+                android:hint="@string/hint_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/tvEmailError"
+                style="@style/Field.Error" />
+
+            <!-- Mot de passe + bouton œil -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/Field"
+                    android:autofillHints="password"
+                    android:hint="@string/hint_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingEnd="56dp" />
+
+                <ImageButton
+                    android:id="@+id/btnTogglePassword"
+                    style="@style/Button.Eye" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvPasswordError"
+                style="@style/Field.Error" />
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical"
+                android:text="@string/forgot_password"
+                android:textColor="@color/primary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- Bandeau : erreur de connexion ou confirmation d'inscription -->
+            <TextView
+                android:id="@+id/tvBanner"
+                style="@style/Banner"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/Button.Primary"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_login" />
+
+            <TextView
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/link_create_account"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Pousse le bloc social vers le bas de l'écran -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                layout="@layout/include_social_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Visible seulement si l'écran n'est pas la racine de la pile -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        style="@style/Button.Back"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette extraite de la maquette -->
+    <color name="primary">#F9531E</color>
+    <color name="primary_pressed">#DE4413</color>
+    <color name="primary_soft">#FFF2ED</color>
+
+    <color name="screen_bg">#FFFFFF</color>
+    <color name="input_fill">#FEF0EB</color>
+    <color name="input_fill_focus">#FDEBE3</color>
+    <color name="social_bg">#EDEDED</color>
+
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#3D3D3D</color>
+    <color name="text_hint">#7C6F6A</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Retours à l'utilisateur -->
+    <color name="error">#C62828</color>
+    <color name="error_bg">#FDECEA</color>
+    <color name="success">#1B6E3F</color>
+    <color name="success_bg">#E8F5EE</color>
+</resources>

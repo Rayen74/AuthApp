@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Illustration : personne avec un ordinateur portable et une plante (style de la maquette) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="330dp"
+    android:height="300dp"
+    android:viewportWidth="330"
+    android:viewportHeight="300">
+
+    <!-- Sol -->
+    <path
+        android:pathData="M10,290L320,290"
+        android:strokeColor="#444444"
+        android:strokeWidth="1.2" />
+
+    <!-- Chaise -->
+    <path
+        android:pathData="M30,80L30,190L150,190"
+        android:strokeColor="#666666"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M30,80L52,80L52,188"
+        android:strokeColor="#666666"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M45,195L32,290M135,195L120,290"
+        android:strokeColor="#666666"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M30,195L150,195"
+        android:strokeColor="#888888"
+        android:strokeWidth="4" />
+
+    <!-- Jambes -->
+    <path
+        android:fillColor="#1C1C1C"
+        android:pathData="M92,160L190,160L196,184L96,192Z" />
+    <path
+        android:fillColor="#1C1C1C"
+        android:pathData="M168,160L204,160L222,282L196,284Z" />
+    <path
+        android:fillColor="#1C1C1C"
+        android:pathData="M190,278L226,278L240,292L192,292Z" />
+
+    <!-- Buste -->
+    <path
+        android:fillColor="#F85A1E"
+        android:pathData="M68,100Q74,62 116,60L150,66Q166,110 160,166L92,168Z" />
+
+    <!-- Bras + tasse -->
+    <path
+        android:pathData="M82,92L56,126L96,140"
+        android:strokeColor="#F85A1E"
+        android:strokeWidth="20"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,104L80,104L80,126L66,126Z" />
+
+    <!-- Ordinateur portable -->
+    <path
+        android:fillColor="#555555"
+        android:pathData="M140,112L206,84L214,128L146,142Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M173,112a5,5 0 1,0 10,0a5,5 0 1,0 -10,0" />
+    <path
+        android:fillColor="#333333"
+        android:pathData="M146,142L214,128L216,134L146,148Z" />
+
+    <!-- Tête -->
+    <path
+        android:fillColor="#F2B38C"
+        android:pathData="M104,48L118,48L118,64L104,64Z" />
+    <path
+        android:fillColor="#F2B38C"
+        android:pathData="M88,36a20,20 0 1,0 40,0a20,20 0 1,0 -40,0" />
+    <path
+        android:fillColor="#1C1C1C"
+        android:pathData="M86,32Q88,10 112,12Q132,14 128,32Q116,22 104,28Q96,30 92,40Z" />
+
+    <!-- Vase -->
+    <path
+        android:fillColor="#6B6B6B"
+        android:pathData="M262,236L292,236L290,290L264,290Z" />
+
+    <!-- Tiges -->
+    <path
+        android:pathData="M277,236L277,170M277,200L252,160M277,196L300,150"
+        android:strokeColor="#555555"
+        android:strokeWidth="1.5" />
+
+    <!-- Feuilles -->
+    <group
+        android:pivotX="248"
+        android:pivotY="150"
+        android:rotation="-25">
+        <path
+            android:fillColor="#F9B4A0"
+            android:pathData="M236,150a12,20 0 1,0 24,0a12,20 0 1,0 -24,0" />
+    </group>
+    <path
+        android:fillColor="#F86A3A"
+        android:pathData="M264,150a13,22 0 1,0 26,0a13,22 0 1,0 -26,0" />
+    <group
+        android:pivotX="302"
+        android:pivotY="146"
+        android:rotation="25">
+        <path
+            android:fillColor="#F9A58C"
+            android:pathData="M291,146a11,19 0 1,0 22,0a11,19 0 1,0 -22,0" />
+    </group>
+    <group
+        android:pivotX="300"
+        android:pivotY="178"
+        android:rotation="35">
+        <path
+            android:fillColor="#F85A1E"
+            android:pathData="M290,178a10,16 0 1,0 20,0a10,16 0 1,0 -20,0" />
+    </group>
+</vector>

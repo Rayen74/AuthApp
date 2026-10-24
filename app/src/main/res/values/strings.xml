@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GestionComptes</string>
+
+    <!-- Accueil (écran de bienvenue, optionnel) -->
+    <string name="welcome_title">Gérez votre compte\nen toute simplicité</string>
+    <string name="welcome_subtitle">Créez votre compte ou connectez-vous pour accéder à votre espace personnel</string>
+    <string name="btn_login_short">Connexion</string>
+    <string name="btn_register_short">Inscription</string>
+
+    <!-- Connexion -->
+    <string name="login_title">Connexion</string>
+    <string name="login_subtitle">Content de vous revoir,\nvous nous avez manqué !</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+    <string name="btn_login">Se connecter</string>
+    <string name="link_create_account">Créer un compte</string>
+    <string name="or_continue_with">Ou continuer avec</string>
+
+    <!-- Inscription -->
+    <string name="register_title">Créer un compte</string>
+    <string name="register_subtitle">Créez un compte pour accéder à votre espace personnel</string>
+    <string name="hint_nom">Nom</string>
+    <string name="hint_prenom">Prénom</string>
+    <string name="hint_confirm_password">Confirmer le mot de passe</string>
+    <string name="helper_password">6 caractères minimum</string>
+    <string name="btn_register">S\'inscrire</string>
+    <string name="link_have_account">J\'ai déjà un compte</string>
+
+    <!-- Espace personnel -->
+    <string name="home_welcome">Bienvenue, %1$s !</string>
+    <string name="home_subtitle">Vous êtes connecté à votre espace personnel</string>
+    <string name="home_email_label">Adresse e-mail</string>
+    <string name="btn_logout">Se déconnecter</string>
+    <string name="logout_confirm_title">Se déconnecter ?</string>
+    <string name="logout_confirm_message">Vous devrez saisir à nouveau vos identifiants pour retrouver votre espace.</string>
+    <string name="btn_cancel">Annuler</string>
+
+    <!-- Accessibilité -->
+    <string name="cd_google">Continuer avec Google</string>
+    <string name="cd_facebook">Continuer avec Facebook</string>
+    <string name="cd_apple">Continuer avec Apple</string>
+    <string name="cd_illustration">Illustration : personne travaillant sur un ordinateur portable</string>
+    <string name="cd_back">Retour</string>
+    <string name="cd_show_password">Afficher le mot de passe</string>
+    <string name="cd_hide_password">Masquer le mot de passe</string>
+
+    <!-- Connexion : retours -->
+    <string name="msg_fill_login">Veuillez saisir votre e-mail et votre mot de passe.</string>
+    <string name="msg_login_failed">E-mail ou mot de passe incorrect.</string>
+    <string name="msg_login_ok">Connexion réussie.</string>
+
+    <!-- Inscription : erreurs sous les champs -->
+    <string name="err_nom_required">Saisissez votre nom</string>
+    <string name="err_prenom_required">Saisissez votre prénom</string>
+    <string name="err_email_required">Saisissez votre e-mail</string>
+    <string name="err_password_required">Saisissez votre mot de passe</string>
+    <string name="err_confirm_required">Confirmez votre mot de passe</string>
+    <string name="err_email_format">Adresse e-mail invalide (exemple : nom@domaine.com)</string>
+    <string name="err_password_short">Le mot de passe doit contenir au moins 6 caractères</string>
+    <string name="err_password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="err_email_used">Cet e-mail est déjà utilisé. Connectez-vous ou utilisez une autre adresse.</string>
+    <string name="msg_register_ok">Compte créé. Saisissez votre mot de passe pour vous connecter.</string>
+
+    <string name="msg_coming_soon">Bientôt disponible</string>
+</resources>

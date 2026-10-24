@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Champ : fond rosé ; contour orange au focus ; contour rouge en erreur
+    (l'erreur est signalée par view.setActivated(true)).
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/input_fill" />
+            <stroke android:width="1.5dp" android:color="@color/error" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/input_fill_focus" />
+            <stroke android:width="1.5dp" android:color="@color/primary" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/input_fill" />
+            <stroke android:width="1.5dp" android:color="@android:color/transparent" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</selector>

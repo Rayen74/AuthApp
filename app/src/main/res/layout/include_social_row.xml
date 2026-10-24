@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- "Ou continuer avec" + 3 boutons (Google, Facebook, Apple) — partagé par Login et Register -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/or_continue_with"
+        android:textColor="@color/primary"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnGoogle"
+            style="@style/Button.Social"
+            android:contentDescription="@string/cd_google"
+            android:src="@drawable/ic_google" />
+
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            style="@style/Button.Social"
+            android:contentDescription="@string/cd_facebook"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageButton
+            android:id="@+id/btnApple"
+            style="@style/Button.Social"
+            android:contentDescription="@string/cd_apple"
+            android:src="@drawable/ic_apple" />
+    </LinearLayout>
+</LinearLayout>
